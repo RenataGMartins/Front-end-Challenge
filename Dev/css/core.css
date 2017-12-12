@@ -1,0 +1,836 @@
+/*-  BASE STYLES
+----------------------------------------------------------------------*/
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline; }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block; }
+    body {
+        line-height: 0; }
+    ol, ul {
+        list-style: none; }
+    blockquote, q {
+        quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none; }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0; }
+
+    *{
+         -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+/*- LET'S GET STARTED!
+----------------------------------------------------------------------*/
+
+body {
+    color: #fff;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden;
+    background: #fff;
+ }
+ /* #Typography
+================================================== */
+@font-face {
+    font-family: 'Helvetica Neue Hv Std';
+    src: url('../fonts/HelveticaNeueLTStd-Hv.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Hv.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTStd-Hv.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-Hv.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Hv.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueLTStd-Hv.svg#HelveticaNeueLTStd-Hv') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/HelveticaNeueLTStd-Lt.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-BoldSemiCn.eot');
+    src: url('../fonts/MyriadPro-BoldSemiCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-BoldSemiCn.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BoldSemiCn.woff') format('woff'),
+        url('../fonts/MyriadPro-BoldSemiCn.ttf') format('truetype'),
+        url('../fonts/MyriadPro-BoldSemiCn.svg#MyriadPro-BoldSemiCn') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Novecento sans wide';
+    src: url('../fonts/Novecentosanswide-DemiBold.eot');
+    src: url('../fonts/Novecentosanswide-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Novecentosanswide-DemiBold.woff2') format('woff2'),
+        url('../fonts/Novecentosanswide-DemiBold.woff') format('woff'),
+        url('../fonts/Novecentosanswide-DemiBold.ttf') format('truetype'),
+        url('../fonts/Novecentosanswide-DemiBold.svg#Novecentosanswide-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #000;
+        font-family: 'Helvetica Neue LT Std', Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin-bottom: 0px;
+        letter-spacing: 2px }
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit;}
+    h1 { font-size: 46px; line-height: 50px; }
+    h2 { font-size: 36px; line-height: 42px; }
+    h3 { font-size: 28px; line-height: 36px; }
+    h4 { font-size: 20px; line-height: 24px; }
+    h5 { font-size: 16px; line-height: 18px; }
+    h6 { font-size: 12px; line-height: 16px; }
+
+
+    h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 72px;
+        text-shadow: 3px 3px 1px #2772a4;
+        margin-bottom: 60px;
+        color: #fff;
+    }
+    h2{
+        
+    font-family: 'Helvetica Neue LT Std', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        text-shadow: 3px 3px 1px #2772a4;
+        color: #fff!important;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        width: 55%;
+    }
+    h3{
+        font-family: 'Myriad Pro', sans-serif;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #222222;
+    }
+
+    p { margin: 0 0 0px 0;
+        color: #848484;
+        font-size: 12px;
+        line-height: 20px; 
+        font-family: 'Helvetica Neue LT Std', Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        letter-spacing: 1px }
+
+    p img { margin: 0; }
+    p.lead { font-size: 21px; line-height: 27px; color: #fe8209;  }
+
+    em { font-style: italic; }
+    strong { font-weight: bold; }
+    small { font-size: 80%; }
+
+    /*  Blockquotes  */
+    blockquote, blockquote p { font-size: 19px; line-height: 24px; color: #777; font-style: italic; }
+    blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+    blockquote cite { display: block; font-size: 12px; color: #555; }
+    blockquote cite:before { content: " - "; }
+    blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+    hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+    a, a:visited {color: #FFF; text-decoration: none; outline: 0; 
+        font-family: 'Helvetica Neue LT Std', Helvetica, Arial, sans-serif;} 
+    p a, p a:visited { line-height: inherit; }
+
+
+
+/* #Structure
+================================================== */
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container_center{
+    display: inline-block;
+    width: 100%;
+}
+.page-container{
+    display: inline-block;
+    vertical-align: top;
+    width: 79%;
+    padding: 20px;
+}
+/* #Site Header
+================================================== */
+.headerPage{
+    background: url("../image/bg_pattern.png") 0 0 repeat;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 120px;
+    margin-bottom: 40px;
+}
+.headerPage .wrapper{
+    text-align: left;
+}
+.handHeader{
+    width: 450px;
+    height: 507px;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: 1;
+}
+
+.downloadIcons{
+    width: 100%;
+    display: inline-block;
+}
+.downloadIcons ol{
+    display: inline-block;
+    width: auto;
+}
+.downloadIcons li{
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.downloadIcons li a{
+    width: 100%;
+    height: 53px;
+    display: inline-block;
+    background-image: url("../image/downloadIcons.png");
+    text-indent: -9999px;
+}
+.downloadIcons ol:hover li a{
+    opacity: 0.3;
+}
+.appleIcon:hover a{
+    opacity: 1!important;
+}
+.andIcon:hover a{
+    opacity: 1!important;
+}
+.winIcon:hover a{
+    opacity: 1!important;
+}
+.andIcon a{background-position: 121px 0;}
+.winIcon a{background-position: 53px 0;}
+
+
+
+
+/* Features
+================================================== */
+.featuresContainer{
+    width: 100%;
+    display: inline-block;
+    margin: 20px 0 40px 0;
+    -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+    transition: all 0.4s ease-out; 
+}
+.featuresItem {
+    width: 33%;
+    border-right: 1px solid #e5e5e5;
+    display: inline-block;
+    margin: 25px 0;
+}
+.featuresItem:nth-child(1) p::after,
+.featuresItem:nth-child(2) p::after,
+.featuresItem:nth-child(3) p::after{
+    content: '';
+    border-bottom: 1px solid #e5e5e5;
+    width: 90%;
+    display: inline-block;
+    margin-bottom: -30px;
+}
+.featuresItem p,
+.featuresImg{
+    display: inline-block;
+    width: 90%;
+}
+.featuresItem h5{
+    font-size: 24px;
+        font-family: 'Myriad Pro', sans-serif;
+    margin: 20px 0;
+}
+.featuresImg{
+    width: 100%;
+    height: 52px;
+    background-image: url("../image/icons_features.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.featuresItem:nth-child(3),
+.featuresItem:last-child{
+    border: 0;
+}
+.marketableIcon{
+    background-position: center -67px;
+}
+.photosIcon{
+    background-position: center -153px;   
+}
+.colorsIcon{
+    background-position: center -239px;   
+}
+.friendlyIcon{
+    background-position: center -319px;   
+}
+.editableIcon{
+    background-position: center -405px;   
+}
+
+/* About
+================================================== */
+
+.aboutContent{
+    background: #e7e7e7;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+.aboutLeftWrapper{
+    text-align: left;
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.aboutRightWrapper{
+    width: 50%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.aboutLeftWrapper ul{
+    list-style: none;
+}
+.aboutLeftWrapper ul li{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.aboutLeftWrapper ul li p{
+    position: relative;
+    padding-left: 15px;
+}
+.aboutLeftWrapper ul li p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid #222222;
+    border-top: 2px solid #222222;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.aboutLeftWrapper ul li p{
+    display: inline-block;
+}
+
+/* Slider
+================================================== */
+ 
+  .slider-container {
+    width: 100%;
+    margin: 0 auto 40px auto;
+  }
+  
+  .slider-container-fixed {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+ 
+.slider {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.slider__slides {
+  display: flex;
+  box-sizing: content-box;
+  position: relative;
+  z-index: 1;
+  transition: transform .3s ease-in-out;
+}
+
+.slider__viewport {
+  overflow: hidden;
+}
+
+.slider__slide {
+    height: 200px;
+  display: flex;
+  justify-content: center;
+  /* Horizontal */
+  align-items: center;
+  /* Vertical */
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+.slider__slide p{
+  font-size: 24px;
+        font-family: 'Helvetica Neue LT Std', Helvetica, Arial, sans-serif;
+    color:#848484;    
+    line-height: 30px;
+}
+.slider__slide p span{
+    display: inherit;
+    color: #000;
+margin-top: 30px;
+font-size: 18px;
+font-weight: bold;
+        font-family: 'Myriad Pro', sans-serif;
+}
+
+
+.slider__nav {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 50;
+}
+.slider__nav li {
+    display: inline-block;
+    margin: 0 6px;
+    zoom: 1;
+  }
+.slider__nav li a {
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: $color-inactive;
+    cursor: pointer;
+    border:1px solid #3498db;
+  }
+.slider__nav li a.active {
+    pointer-events: none;
+    background: #3498db;
+    cursor: default;
+  }
+
+.hidden {
+  display: none;
+}
+
+
+  @media (min-width:670px) {
+    .slider-container {
+      width: 600px;
+    }
+  }
+  
+  @media (min-width:1040px) {
+    .slider-container {
+      width: 968px;
+    }
+  }
+  
+  @media (min-width:1270px) {
+    .slider-container {
+      max-width: 1200px;
+    }
+  }
+  
+/* Price
+================================================== */
+
+.priceContent{
+    background: #e7e7e7;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+.pricePlanItem {
+    display: inline-block;
+    width: 24%;
+    margin-right: 2px;
+    background:#fff;
+    vertical-align: middle;
+}
+.pricePlans {
+    margin: 40px 0 -80px 0;
+    display: inline-block;
+}
+.pricePlanItem footer{
+    margin-top: 0;
+}
+.pricePlanItem footer,
+.pricePlanItem h5{
+    background: #3498db;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.pricePlanItem footer a{
+    padding:20px;
+    background: #0d74b9;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.pricePlanItem h5{
+    color: #fff;
+    font-size: 28px;
+        font-family: 'Myriad Pro', sans-serif;
+}
+.pricePlanItem ul{
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+}
+.deluxePlan{
+    margin-top: 20px;
+}
+.deluxePlan ul li {
+    padding: 10px 0 !important;
+}
+.pricePlanItem ul li{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+.pricePlanItem ul li.price p{
+    font-size: 42px;
+    font-family: 'Novecento sans wide';
+    color: #222222;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.pricePlanItem ul li.price span{
+    font-size: 20px;
+    font-family: 'Novecento sans wide';
+    color: #222222;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 27px;
+}
+
+/* Get in Touch
+================================================== */
+.contactContent {
+    display: inline-block;
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+}
+.socialIcons{
+    display: inline-block;
+    width: 100%;
+}
+.socialIcons li{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+}
+.socialIcons li a {
+    width: 100%;
+    text-indent: -9999px;
+    height: 40px;
+    background-image: url("../image/social.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -8px -4px;
+}
+.socialIcons li.twIcon:hover a{
+    background-position: -8px -48px;
+}
+.socialIcons li.fbIcon a{
+    background-position: -52px -4px;
+}
+.socialIcons li.fbIcon:hover a{
+    background-position: -52px -48px;
+}
+.socialIcons li.pinIcon a{
+    background-position: -96px -4px;
+}
+.socialIcons li.pinIcon:hover a{
+    background-position: -96px -48px;
+}
+.socialIcons li.googleIcon a{
+    background-position: -140px -4px;
+}
+.socialIcons li.googleIcon:hover a{
+    background-position: -140px -48px;
+}
+.socialIcons li.linIcon a{
+    background-position: -184px -4px;
+}
+.socialIcons li.linIcon:hover a{
+    background-position: -184px -48px;
+}
+.socialIcons li.ytIcon a{
+    background-position: -229px -4px;
+}
+.socialIcons li.ytIcon:hover a{
+    background-position: -229px -48px;
+}
+.socialIcons ul{
+    display: inline-block;
+    margin-top: 20px;
+}
+.contactContent h3{
+    margin-bottom: 20px;
+}
+
+footer{
+    display: inline-block;
+    width: 100%;
+    background: #e7e7e7;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footerMenu{
+    display: inline-block;
+    width: 100%;
+}
+.footerMenu li{
+    display: inline-block;
+    margin-right: 5%;
+}
+.footerMenu a{
+    color: #848484;
+    font-size: 16px;
+        font-family: 'Helvetica Neue LT Std', Helvetica, Arial, sans-serif;
+}
+/*******************************************************************************
+*                            BREAKINGPOINTS
+*******************************************************************************/
+/*******************************************************************************
+*  Media Query » Tablet (paisagem)
+*******************************************************************************/
+
+@media screen and (max-width: 1000px) {
+    .headerPage h2{
+        width: 45%;
+    }
+}
+
+
+
+/*******************************************************************************
+*  Media Query » Tablet (paisagem)
+*******************************************************************************/
+
+@media screen and (max-width: 960px) {
+
+     .featuresSubTitle{
+        padding: 0 40px;
+     }
+     .headerPage{
+        height: 400px;
+        padding-top: 90px;
+     }
+     .handHeader{
+        display: none;
+     }
+     h1 {
+        text-align: center;
+     }
+      .headerPage h2{
+        width: 100%;
+        text-align: center;
+    }
+    .downloadIcons{
+        text-align: center;
+
+    }
+}
+
+
+
+
+/*******************************************************************************
+*  Media Query » Tablet (retrato)
+*******************************************************************************/
+
+@media screen and (max-width: 810px) {
+
+     .featuresItem:nth-child(2),
+     .featuresItem:nth-child(4)
+     {
+        border: 0;
+     }
+     .featuresItem:nth-child(3){
+
+     border-right: 1px solid #e5e5e5;
+     }
+     .featuresItem:nth-child(4) p::after{
+        content: '';
+        border-bottom: 1px solid #e5e5e5;
+        width: 90%;
+        display: inline-block;
+        margin-bottom: -30px;
+     }
+}
+
+/*******************************************************************************
+*  Media Query » Tablet (retrato)
+*******************************************************************************/
+
+@media screen and (max-width: 780px) {
+
+     .deluxePlan{
+        margin-top: 0;
+     }
+     .deluxePlan ul li{
+        padding: 5px 0!important;
+     }
+     .pricePlanItem{
+        width: 33%;
+        margin-bottom: 5px;
+     }
+     .pricePlans {
+        margin: 40px 0 -40px 0;
+        display: inline-block;
+    }
+    .contactContent{
+        margin-top: 90px;
+    }
+}
+
+
+
+
+
+/*******************************************************************************
+*  Media Query » Smartphones retina (retrato)
+*******************************************************************************/
+
+@media screen and (max-width: 640px) {
+
+     .aboutLeftWrapper{
+        padding: 0 40px;
+        width: 100%;
+
+     }
+     .aboutRightWrapper{
+        width: 100%;
+        margin-top: 40px
+     }
+     .slider-container {
+        width: 80%;
+    }
+}
+
+
+
+/*******************************************************************************
+*  Media Query » Smartphones (paisagem)
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+
+     .slider-container {
+        width: 80%;
+    }
+    .pricePlanItem{
+        width: 65%;
+    }
+    .contactContent p{
+        margin: 0 20px
+    }
+    .footerMenu a{
+        font-size: 12px;
+    }
+    .featuresItem{
+        width: 65%;
+        border-right: 0!important;
+    }
+    .featuresItem:nth-child(5) p::after{
+        content: '';
+        border-bottom: 1px solid #e5e5e5;
+        width: 90%;
+        display: inline-block;
+        margin-bottom: -30px;
+     }
+     .slider__slide p{
+        font-size: 18px;
+        line-height: 22px;
+     }
+
+}
+
+/*******************************************************************************
+*  Media Query » Smartphones (retrato)
+*******************************************************************************/
+
+@media screen and (max-width: 380px) {
+
+    .headerPage h2 {
+        font-size: 18px;
+        margin: 0 20px 40px 20px;
+        width: 90%;
+    }
+    .pricePlanItem {
+        width: 70%;
+    }
+    .footerMenu li {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 12%;
+    }
+    .footerMenu a {
+        font-size: 16px;
+    }
+}
+
+
+
+/*******************************************************************************
+*  Media Query » Smartphones (retrato)
+*******************************************************************************/
+
+@media screen and (max-width: 320px) {
+
+}
+
